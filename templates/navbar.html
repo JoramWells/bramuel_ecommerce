@@ -1,0 +1,97 @@
+{% load static %}
+
+{% load cart_template_tags %}
+
+<div class="header-bot">
+    <div class="header-bot_inner_wthreeinfo_header_mid">
+        <!-- header-bot-->
+        <div class="col-md-4 logo_agile">
+            <h1>
+                <a href="index.html">
+                    <span>A</span>fro
+                    <span>m</span>ix
+                    <img src="{% static 'images/logo2.png' %}" alt=" ">
+                </a>
+            </h1>
+        </div>
+        <!-- header-bot -->
+        <div class="col-md-8 header">
+            <!-- header lists -->
+            <ul>
+                {% if request.user.is_authenticated %}
+                <li>
+                    <a class="play-icon popup-with-zoom-anim" href="#small-dialog1">
+                        <span class="fa fa-map-marker" aria-hidden="true"></span> Language</a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#myModal1">
+                        <span class="fa fa-truck" aria-hidden="true"></span>Track Order</a>
+                </li>
+                <li>
+                    <span class="fa fa-phone" aria-hidden="true"></span> +49 1521 5037243
+                </li>
+
+                <li>
+                    <a href="{% url 'mix:order-summary' %}" class="nav-link waves-effect">
+                        <span class="badge red z-depth-1 mr-1"> {{ request.user|cart_item_count }} </span>
+                        <i class="fas fa-shopping-cart"></i>
+                      </a>
+                </li>
+
+                <li>
+                    <a class="nav-link waves-effect" href="{% url 'account_logout' %}">
+                        <span class="clearfix d-none d-sm-inline-block"> Logout </span>
+                      </a>
+                </li>
+                {% else %}
+                <li>
+                    <a href="{% url 'account_login' %}" data-toggle="modal" data-target="#myModal1">
+                        <span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
+                </li>
+                <li>
+                    <a href="{% url 'account_signup' %}" data-toggle="modal" data-target="#myModal2">
+                        <span class="fa fa-pencil-square-o" aria-hidden="true"></span> Sign Up </a>
+                </li>
+                {% endif %}
+            </ul>
+            <!-- //header lists -->
+            <!-- search -->
+            <div class="agileits_search">
+                <form action="#" method="post">
+                    <input name="Search" type="search" placeholder="How can we help you today?" required="">
+                    <button type="submit" class="btn btn-default" aria-label="Left Align">
+                        <span class="fa fa-search" aria-hidden="true"> </span>
+                    </button>
+                </form>
+            </div>
+            <!-- //search -->
+            <!-- cart details -->
+
+
+            
+            <!-- //cart details -->
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+
+	<!-- shop locator (popup) -->
+	<!-- Button trigger modal(shop-locator) -->
+	<div id="small-dialog1" class="mfp-hide">
+		<div class="select-city">
+			<h3>Please Select Your Language</h3>
+			<select class="list_of_cities">
+				<optgroup label="Language">
+					<option selected style="display:none;color:#eee;">Select Language</option>
+					<option>Deutsch</option>
+					<option <a href="http://free-website-translation.com/" id="ftwtranslation_button" hreflang="de" title="" style="border:0;"><img src="http://free-website-translation.com/img/fwt_button_en.gif" id="ftwtranslation_image" alt="website translator plugin" style="border:0;"/></a> <script type="text/javascript" src="http://free-website-translation.com/scripts/fwt.js" /></script>>English</option>
+				</optgroup>
+				
+			</select>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- //shop locator (popup) -->

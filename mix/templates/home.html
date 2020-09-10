@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 	<!-- top Products -->
 	<div class="ads-grid">
@@ -13,7 +14,15 @@
 			</h3>
 			<!-- //tittle heading -->
 			<!-- product left -->
-			{% include 'sidebar.html' %}
+
+
+
+
+
+
+
+
+
 			<!-- //product left -->
 			<!-- product right -->
 			<div class="agileinfo-ads-display col-md-9">
@@ -28,10 +37,13 @@
 						<div class="col-md-4 product-men">
 							<div class="men-pro-item simpleCart_shelfItem">
 								<div class="men-thumb-item">
-									<img src="{{ item.image.url }}" alt="" style="height: 18rem;">
+									<img src="{% static 'images/k1.jpg' %}" alt="" >
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
-											<a href="{{ item.get_absolute_url }}" class="link-product-add-cart">Quick View</a>
+											
+										<!--											<a href="{{ item.get_absolute_url }}" class="link-product-add-cart">Quick View</a>
+-->	
+										<a href="{{ item.get_absolute_url }}" class="link-product-add-cart">Quick View</a>
 										</div>
 									</div>
 									<span class="product-new-top">New</span>
@@ -46,22 +58,7 @@
                                         <del>{{ item.discount_price }}</del>
                                         {% endif %}
 									</div>
-									<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" />
-												<input type="hidden" name="add" value="1" />
-												<input type="hidden" name="business" value=" " />
-												<input type="hidden" name="item_name" value="Almonds, 100g" />
-												<input type="hidden" name="amount" value="149.00" />
-												<input type="hidden" name="discount_amount" value="1.00" />
-												<input type="hidden" name="currency_code" value="USD" />
-												<input type="hidden" name="return" value=" " />
-												<input type="hidden" name="cancel_return" value=" " />
-												<input type="submit" name="submit" value="Add to cart" class="button" />
-											</fieldset>
-										</form>
-									</div>
+
 
 								</div>
                             </div>

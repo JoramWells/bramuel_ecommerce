@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 
   <main class="mt-5 pt-4">
@@ -11,7 +11,7 @@
         <!--Grid column-->
         <div class="col-md-6 mb-4">
 
-          <img style="height: 400px; width: 400px;" src="{{ object.image.url}}" class="img-fluid" alt="">
+          <img style="height:14rem;" src="{% static 'images/k1.jpg' %}" class="img-fluid" alt="">
 
         </div>
         <!--Grid column-->
