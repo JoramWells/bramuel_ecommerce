@@ -25,7 +25,7 @@ SECRET_KEY = '#gyt)9#6=!0gy=ly57&*u0x6u3i1*1k(y@ps9&(5!r+k7^2nv9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://www.jilasafroshop.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
