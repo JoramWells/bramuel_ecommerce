@@ -454,3 +454,9 @@ def payment_complete(request):
     order.ordered=True
     order.save()
     return redirect('home')
+
+def about(request):
+    return render(request,"about.html")
+
+def contact(request):
+    return render(request,"contact.html")
