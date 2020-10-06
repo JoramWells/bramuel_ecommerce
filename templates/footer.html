@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="col-xs-4 w3l-rightmk">
-            <img src="images/tab3.png" alt=" ">
+            <img src="{% static 'images/tab3.png' %}" alt=" ">
         </div>
         <div class="clearfix"></div>
     </div>
@@ -55,10 +55,10 @@
                         
                     
                         <li>
-                            <i class="fa fa-phone"></i> +4915215037243 </li>
+                            <i class="fa fa-phone"></i> +254 ... </li>
                         <li>
                             <i class="fa fa-envelope-o"></i>
-                            <a href="mailto:example@mail.com"> support@afromix.com</a>
+                            <a href=""> jilasafroshop.com</a>
                         </li>
                     </ul>
                 </div>
@@ -81,7 +81,7 @@
                 <h5>Payment Method</h5>
                 <ul>
                     <li>
-                        <img src="images/paypal.png" alt="paypal logo" width = "180" height = "50">
+                        <img src="{% static 'images/paypal.png' %}" alt="paypal logo" width = "180" height = "50">
                     </li>
                 </ul>
             </div>
@@ -94,8 +94,7 @@
 <!-- copyright -->
 <div class="copy-right">
     <div class="container">
-        <p>© 2017 Grocery Shoppy. All rights reserved | Design by
-            <a href="http://w3layouts.com"> W3layouts.</a>
+        <p>© 2020 Online Mall. All rights reserved | Design by
         </p>
     </div>
 </div>
@@ -103,11 +102,11 @@
 
 <!-- js-files -->
 <!-- jquery -->
-<script src="js/jquery-2.1.4.min.js"></script>
+<script src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
 <!-- //jquery -->
 
 <!-- popup modal (for signin & signup)-->
-<script src="js/jquery.magnific-popup.js"></script>
+<script src="{% static 'js/jquery.magnific-popup.js' %}"></script>
 <script>
     $(document).ready(function () {
         $('.popup-with-zoom-anim').magnificPopup({
@@ -133,7 +132,7 @@
 
 
 <!-- flexisel (for special offers) -->
-<script src="js/jquery.flexisel.js"></script>
+<script src="{% static 'js/jquery.flexisel.js' %}"></script>
 <script>
     $(window).load(function () {
         $("#flexiselDemo1").flexisel({
@@ -183,12 +182,12 @@
 <!-- //password-script -->
 
 <!-- smoothscroll -->
-<script src="js/SmoothScroll.min.js"></script>
+<script src="{% static 'js/SmoothScroll.min.js' %}"></script>
 <!-- //smoothscroll -->
 
 <!-- start-smooth-scrolling -->
-<script src="js/move-top.js"></script>
-<script src="js/easing.js"></script>
+<script src="{% static 'js/move-top.js' %}"></script>
+<script src="{% static 'js/easing.js' %}"></script>
 <script>
     jQuery(document).ready(function ($) {
         $(".scroll").click(function (event) {
@@ -222,7 +221,7 @@
 <!-- //smooth-scrolling-of-move-up -->
 
 <!-- for bootstrap working -->
-<script src="js/bootstrap.js"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
 <!-- //for bootstrap working -->
 <!-- //js-files -->
 
