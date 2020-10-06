@@ -10,7 +10,7 @@
                 <a href="index.html">
                     <span>Jilas</span>afro
                     <span>shop</span>
-                    <img src="{% static 'images/logo2.png' %}" alt=" ">
+                    <img src="{% static 'images/africalogo.png' %}"  width = "70" height="80" alt=" ">
                 </a>
             </h1>
         </div>
@@ -48,6 +48,10 @@
                 <li>
                     <a href="{% url 'account_signup' %}" data-toggle="modal" data-target="">
                         <span class="fa fa-pencil-square-o" aria-hidden="true"></span> Sign Up </a>
+                </li>
+                <li>
+                    <a href="{% url 'account_login' %}" data-toggle="modal" data-target="">
+                        <span class="fa fa-pencil-square-o" aria-hidden="true"></span> Login </a>
                 </li>
                 {% endif %}
             </ul>
